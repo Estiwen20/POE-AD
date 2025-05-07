@@ -1,5 +1,5 @@
 from rest_framework import viewsets
-from .models import Loro
+from .models import Loro  # Modelo con mayúscula
 from .serializers import LoroSerializer
 
 class LoroViewSet(viewsets.ModelViewSet):

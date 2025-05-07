@@ -24,19 +24,15 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/loros/\n",
+					"raw": "http://localhost:8000/loros/",
 					"protocol": "http",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"api",
 						"loros",
-						"\n"
+						""
 					]
 				}
 			},
@@ -49,7 +45,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"nombre\": \"pepito\",\r\n  \"color\": \"amarillo\",\r\n  \"alas\": 2,\r\n  \"edad\": 5\r\n}\r\n",
+					"raw": "{\r\n  \"nombre\": \"Loro\",\r\n  \"edad\": 3,\r\n  \"tamaño_alas\": 30,\r\n  \"color\": \"Verde\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -57,19 +53,15 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/loros/",
+					"raw": "http://localhost:8000/loros/\n",
 					"protocol": "http",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"api",
 						"loros",
-						""
+						"\n"
 					]
 				}
 			},
@@ -81,19 +73,14 @@
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/loros/1/",
+					"raw": "http://localhost:8000/loros/",
 					"protocol": "http",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"api",
 						"loros",
-						"1",
 						""
 					]
 				}
@@ -115,19 +102,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/loros/3/",
+					"raw": "http://localhost:8000/loros/",
 					"protocol": "http",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"api",
 						"loros",
-						"3",
 						""
 					]
 				}
@@ -152,54 +134,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/loros/5/\n",
+					"raw": "http://localhost:8000/loros/",
 					"protocol": "http",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"api",
-						"loros",
-						"5",
-						"\n"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "guardar",
-			"request": {
-				"auth": {
-					"type": "noauth"
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"nombre\": \"pepito\",\r\n  \"color\": \"blanco\",\r\n  \"alas\": 2,\r\n  \"edad\": 1\r\n}\r\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/loros/",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
 						"loros",
 						""
 					]
