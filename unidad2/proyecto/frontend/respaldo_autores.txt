@@ -1,0 +1,9 @@
+Nombre: angie
+Nacionalidad: veneca
+Edad: 89
+Nombre: jeferson
+Nacionalidad: asiatico
+Edad: 200
+Nombre: david
+Nacionalidad: estadounidence
+Edad: 17
