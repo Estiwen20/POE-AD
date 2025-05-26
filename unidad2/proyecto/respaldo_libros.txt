@@ -1,8 +1,24 @@
-Título: maria
-Género: amor
-Páginas: 600
-Año: 1887
-Título: la vandida
-Género: accion
-Páginas: 340
-Año: 2025
+ID: 3
+Título: Cien años de soledad
+Género: Realismo mágico
+Páginas: 417
+Año: 1967
+
+ID: 4
+Título: La casa de los espíritus
+Género: Ficción
+Páginas: 400
+Año: 1982
+
+ID: 5
+Título: Conversación en La Catedral
+Género: Novela política
+Páginas: 601
+Año: 1969
+
+ID: 6
+Título: Ficciones
+Género: cuento
+Páginas: 174
+Año: 1944
+

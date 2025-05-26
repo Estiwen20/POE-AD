@@ -1,9 +1,20 @@
-Nombre: angie
-Nacionalidad: veneca
-Edad: 89
-Nombre: jeferson
-Nacionalidad: asiatico
-Edad: 200
-Nombre: david
-Nacionalidad: estadounidence
-Edad: 17
+ID: 5
+Nombre: Gabriel García Márquez
+Nacionalidad: Colombiana
+Edad: 87
+
+ID: 6
+Nombre: Isabel Allende
+Nacionalidad: Chilena
+Edad: 81
+
+ID: 7
+Nombre: Mario Vargas Llosa
+Nacionalidad: Peruana
+Edad: 88
+
+ID: 8
+Nombre: Jorge Luis Borges
+Nacionalidad: Argentino
+Edad: 86
+

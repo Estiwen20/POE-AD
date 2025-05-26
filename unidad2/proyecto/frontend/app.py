@@ -311,16 +311,25 @@ class App:
                 # Obtener autores y guardar en archivo
                 r_autores = requests.get(f"{API_URL}/autores/")
                 if r_autores.status_code == 200:
-                    with open("backup_autores.txt", "w", encoding="utf-8") as f:
+                    with open("respaldo_autores.txt", "w", encoding="utf-8") as f:
                         for a in r_autores.json():
-                            f.write(f"ID: {a['id']}, Nombre: {a['nombre']}, Nacionalidad: {a['nacionalidad']}, Edad: {a['edad']}\n")
+                            f.write(f"ID: {a['id']}\n")
+                            f.write(f"Nombre: {a['nombre']}\n")
+                            f.write(f"Nacionalidad: {a['nacionalidad'].capitalize()}\n")
+                            f.write(f"Edad: {a['edad']}\n\n")  # línea en blanco para separar autores
+
 
                 # Obtener libros y guardar en archivo
                 r_libros = requests.get(f"{API_URL}/libros/")
                 if r_libros.status_code == 200:
-                    with open("backup_libros.txt", "w", encoding="utf-8") as f:
+                    with open("respaldo_libros.txt", "w", encoding="utf-8") as f:
                         for l in r_libros.json():
-                            f.write(f"ID: {l['id']}, Título: {l['titulo']}, Género: {l['genero']}, Páginas: {l['paginas']}, Año: {l['anio']}\n")
+                            f.write(f"ID: {l['id']}\n")
+                            f.write(f"Título: {l['titulo']}\n")
+                            f.write(f"Género: {l['genero']}\n")
+                            f.write(f"Páginas: {l['paginas']}\n")
+                            f.write(f"Año: {l['anio']}\n\n")
+
 
                 print("Respaldo automático realizado.")
             except Exception as e:
