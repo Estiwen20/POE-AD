@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from front.vistas.interfaz import Interfaz
 
 def main():
@@ -5,3 +9,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

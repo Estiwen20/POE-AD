@@ -1,0 +1,25 @@
+ID: 2
+Nombre: Elena Márquez
+Nacionalidad: Colombiana
+Edad: 49
+
+ID: 3
+Nombre: Tomas Rivera
+Nacionalidad: Mexico
+Edad: 64
+
+ID: 4
+Nombre: Sofia Bianchi
+Nacionalidad: Argentina
+Edad: 42
+
+ID: 5
+Nombre: Lucas Pereira
+Nacionalidad: Brasil
+Edad: 54
+
+ID: 6
+Nombre: Ana Gonzales
+Nacionalidad: España
+Edad: 34
+

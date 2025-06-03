@@ -1,0 +1,30 @@
+ID: 1
+Título: El Jardín de las Sombras
+Género: Novela
+Páginas: 312
+Año: 2001
+
+ID: 2
+Título: Voces del Silencio
+Género: Poesia
+Páginas: 158
+Año: 1985
+
+ID: 3
+Título: Tiempo de Espera
+Género: Drama
+Páginas: 224
+Año: 2009
+
+ID: 4
+Título: Río de Memorias
+Género: Narrativa Histórica
+Páginas: 389
+Año: 1995
+
+ID: 5
+Título: Bajo el Sol de Granada
+Género: Romance
+Páginas: 275
+Año: 2015
+

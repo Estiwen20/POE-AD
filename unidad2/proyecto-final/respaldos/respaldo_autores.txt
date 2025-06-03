@@ -1,0 +1,15 @@
+ID: 6
+Nombre: Isabel Allende
+Nacionalidad: Chilena
+Edad: 81
+
+ID: 7
+Nombre: Mario Vargas Llosa
+Nacionalidad: Peruana
+Edad: 88
+
+ID: 8
+Nombre: Jorge Luis Borges
+Nacionalidad: Argentino
+Edad: 86
+
