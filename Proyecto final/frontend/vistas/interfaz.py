@@ -52,22 +52,25 @@ class Interfaz:
         self.notebook.add(self.frame_autores, text="Autores")
         
         # Frame superior para formulario
-        frame_form_autor = ttk.LabelFrame(self.frame_autores, text="Datos del Autor", padding=10)
+        frame_form_autor = ttk.LabelFrame(self.frame_autores, text="Informacion del Autor", padding=10)
         frame_form_autor.pack(fill=tk.X, padx=10, pady=5)
         
         # Campos del formulario
+       # Fila 0
         ttk.Label(frame_form_autor, text="🔐ID:").grid(row=0, column=0, sticky=tk.W, padx=5, pady=5)
         self.entry_id_autor = ttk.Entry(frame_form_autor, textvariable=self.autor_modelo.id, width=20)
         self.entry_id_autor.grid(row=0, column=1, padx=5, pady=5)
-        
-        ttk.Label(frame_form_autor, text="📑Nombre:").grid(row=1, column=0, sticky=tk.W, padx=5, pady=5)
-        ttk.Entry(frame_form_autor, textvariable=self.autor_modelo.nombre, width=20).grid(row=1, column=1, padx=5, pady=5)
-        
-        ttk.Label(frame_form_autor, text="📆Edad:").grid(row=2, column=0, sticky=tk.W, padx=5, pady=5)
-        ttk.Entry(frame_form_autor, textvariable=self.autor_modelo.edad, width=20).grid(row=2, column=1, padx=5, pady=5)
-        
-        ttk.Label(frame_form_autor, text="🌏Nacionalidad:").grid(row=3, column=0, sticky=tk.W, padx=5, pady=5)
-        ttk.Entry(frame_form_autor, textvariable=self.autor_modelo.nacionalidad, width=20).grid(row=3, column=1, padx=5, pady=5)
+
+        ttk.Label(frame_form_autor, text="📑Nombre:").grid(row=0, column=2, sticky=tk.W, padx=20, pady=5)
+        ttk.Entry(frame_form_autor, textvariable=self.autor_modelo.nombre, width=20).grid(row=0, column=3, padx=5, pady=5)
+
+        # Fila 1
+        ttk.Label(frame_form_autor, text="📆Edad:").grid(row=1, column=0, sticky=tk.W, padx=5, pady=5)
+        ttk.Entry(frame_form_autor, textvariable=self.autor_modelo.edad, width=20).grid(row=1, column=1, padx=5, pady=5)
+
+        ttk.Label(frame_form_autor, text="🌏Nacionalidad:").grid(row=1, column=2, sticky=tk.W, padx=20, pady=5)
+        ttk.Entry(frame_form_autor, textvariable=self.autor_modelo.nacionalidad, width=20).grid(row=1, column=3, padx=5, pady=5)
+
         
         # Frame para botones reorganizados en 2 filas
         frame_botones_autor = ttk.Frame(frame_form_autor)
@@ -107,22 +110,24 @@ class Interfaz:
         frame_form_libro.pack(fill=tk.X, padx=10, pady=5)
         
         # Columna 1 (izquierda)
-        ttk.Label(frame_form_libro, text="🔐ID:").grid(row=0, column=0, sticky=tk.W, padx=5, pady=5)
-        self.entry_id_libro = ttk.Entry(frame_form_libro, textvariable=self.libro_modelo.id, width=25)
-        self.entry_id_libro.grid(row=0, column=1, padx=5, pady=5)
+       # Fila 0
+        ttk.Label(frame_form_libro, text="🧾Título:").grid(row=0, column=0, sticky=tk.W, padx=5, pady=5)
+        ttk.Entry(frame_form_libro, textvariable=self.libro_modelo.titulo, width=25).grid(row=0, column=1, padx=5, pady=5)
 
-        ttk.Label(frame_form_libro, text="🧾Título:").grid(row=1, column=0, sticky=tk.W, padx=5, pady=5)
-        ttk.Entry(frame_form_libro, textvariable=self.libro_modelo.titulo, width=25).grid(row=1, column=1, padx=5, pady=5)
+        ttk.Label(frame_form_libro, text="🔐ID:").grid(row=0, column=2, sticky=tk.W, padx=10, pady=5)
+        ttk.Entry(frame_form_libro, textvariable=self.libro_modelo.id, width=25).grid(row=0, column=3, padx=5, pady=5)
 
-        ttk.Label(frame_form_libro, text="🎬Género:").grid(row=2, column=0, sticky=tk.W, padx=5, pady=5)
-        ttk.Entry(frame_form_libro, textvariable=self.libro_modelo.genero, width=25).grid(row=2, column=1, padx=5, pady=5)
+        # Fila 1
+        ttk.Label(frame_form_libro, text="📚Páginas:").grid(row=1, column=0, sticky=tk.W, padx=5, pady=5)
+        ttk.Entry(frame_form_libro, textvariable=self.libro_modelo.paginas, width=25).grid(row=1, column=1, padx=5, pady=5)
 
-        # Columna 2 (derecha)
-        ttk.Label(frame_form_libro, text="📚Páginas:").grid(row=0, column=2, sticky=tk.W, padx=20, pady=5)
-        ttk.Entry(frame_form_libro, textvariable=self.libro_modelo.paginas, width=25).grid(row=0, column=3, padx=5, pady=5)
+        ttk.Label(frame_form_libro, text="🎬Género:").grid(row=1, column=2, sticky=tk.W, padx=10, pady=5)
+        ttk.Entry(frame_form_libro, textvariable=self.libro_modelo.genero, width=25).grid(row=1, column=3, padx=5, pady=5)
 
-        ttk.Label(frame_form_libro, text="📆Año Publicación:").grid(row=1, column=2, sticky=tk.W, padx=20, pady=5)
-        ttk.Entry(frame_form_libro, textvariable=self.libro_modelo.año_publicacion, width=25).grid(row=1, column=3, padx=5, pady=5)
+        # Fila 2
+        ttk.Label(frame_form_libro, text="📆Año Publicación:").grid(row=2, column=0, sticky=tk.W, padx=5, pady=5)
+        ttk.Entry(frame_form_libro, textvariable=self.libro_modelo.año_publicacion, width=25).grid(row=2, column=1, padx=5, pady=5)
+
 
         # Frame para botones
         # Frame para botones (organizados en 2 filas y 3 columnas)
@@ -130,14 +135,16 @@ class Interfaz:
         frame_botones_libro.grid(row=3, column=0, columnspan=4, pady=10)
 
         # Fila 1
-        ttk.Button(frame_botones_libro, text="📁Guardar", command=self.guardar_libro).grid(row=0, column=0, padx=10, pady=5, sticky="ew")
-        ttk.Button(frame_botones_libro, text="✏️Actualizar", command=self.actualizar_libro).grid(row=0, column=1, padx=10, pady=5, sticky="ew")
-        ttk.Button(frame_botones_libro, text="❌Eliminar", command=self.eliminar_libro).grid(row=0, column=2, padx=10, pady=5, sticky="ew")
+        frame_botones_libro = ttk.Frame(frame_form_libro)
+        frame_botones_libro.grid(row=0, column=4, rowspan=3, padx=(20,0), pady=5, sticky="n")  # columna a la derecha, que abarca 3 filas
 
-        # Fila 2
-        ttk.Button(frame_botones_libro, text="🔐Consultar por ID", command=self.consultar_libro).grid(row=1, column=0, padx=10, pady=5, sticky="ew")
-        ttk.Button(frame_botones_libro, text="🌐Consultar Todos", command=self.consultar_todos_libros).grid(row=1, column=1, padx=10, pady=5, sticky="ew")
-        ttk.Button(frame_botones_libro, text="🧹Limpiar", command=self.limpiar_libro).grid(row=1, column=2, padx=10, pady=5, sticky="ew")
+        # Botones en columna vertical
+        ttk.Button(frame_botones_libro, text="📁Guardar", command=self.guardar_libro).grid(row=0, column=0, padx=10, pady=5, sticky="ew")
+        ttk.Button(frame_botones_libro, text="✏️Actualizar", command=self.actualizar_libro).grid(row=1, column=0, padx=10, pady=5, sticky="ew")
+        ttk.Button(frame_botones_libro, text="❌Eliminar", command=self.eliminar_libro).grid(row=2, column=0, padx=10, pady=5, sticky="ew")
+        ttk.Button(frame_botones_libro, text="🔐Consultar por ID", command=self.consultar_libro).grid(row=3, column=0, padx=10, pady=5, sticky="ew")
+        ttk.Button(frame_botones_libro, text="🌐Consultar Todos", command=self.consultar_todos_libros).grid(row=4, column=0, padx=10, pady=5, sticky="ew")
+        ttk.Button(frame_botones_libro, text="🧹Limpiar", command=self.limpiar_libro).grid(row=5, column=0, padx=10, pady=5, sticky="ew")
 
         
         # Frame para tabla
@@ -160,7 +167,7 @@ class Interfaz:
         self.tabla_autores.tabla.bind("<<TreeviewSelect>>", self.seleccionar_autor)
         
     def crear_tabla_libros(self, parent):
-        titulos = ["ID", "Título", "Género", "Páginas", "Año Publicación"]
+        titulos = ["ID", "Título", "Género", "Páginas", "Año de Publicación"]
         columnas = ["id", "titulo", "genero", "paginas", "año_publicacion"]
         data = []
         
@@ -214,7 +221,7 @@ class Interfaz:
                 messagebox.showwarning("❗Advertenci❗a", "Debe seleccionar un autor para eliminar")
                 return
                 
-            respuesta = messagebox.askyesno("Confirmar", "¿Está seguro de eliminar este autor?")
+            respuesta = messagebox.askyesno("Confirmar", "¿seguro desea eliminar este autor?")
             if respuesta:
                 resultado = self.autor_controlador.eliminar(self.autor_modelo.id.get())
                 if resultado == 204:
@@ -296,7 +303,7 @@ class Interfaz:
     def actualizar_libro(self):
         try:
             if not self.libro_modelo.id.get():
-                messagebox.showwarning("❗Advertencia❗", "Debe seleccionar un libro para actualizar")
+                messagebox.showwarning("❗Advertencia❗", "Seleccione un libro para actualizar")
                 return
                 
             resultado = self.libro_controlador.actualizar(
@@ -318,10 +325,10 @@ class Interfaz:
     def eliminar_libro(self):
         try:
             if not self.libro_modelo.id.get():
-                messagebox.showwarning("❗Advertencia❗", "Debe seleccionar un libro para eliminar")
+                messagebox.showwarning("❗Advertencia❗", "Seleccione un libro para eliminar")
                 return
                 
-            respuesta = messagebox.askyesno("Confirmar", "¿Está seguro de eliminar este libro?")
+            respuesta = messagebox.askyesno("Confirmar", "¿quieres eliminar este libro?")
             if respuesta:
                 resultado = self.libro_controlador.eliminar(self.libro_modelo.id.get())
                 if resultado == 204:
@@ -390,7 +397,7 @@ class Interfaz:
         self.respaldos_activos = True
         self.hilo_respaldo = threading.Thread(target=self.respaldos_automaticos, daemon=True)
         self.hilo_respaldo.start()
-        print("Respaldos automáticos iniciados (cada 60 segundos)")
+        print("Respaldos automáticos iniciados (segun el tiempo asignado)")
         
     def respaldos_automaticos(self):        
         while self.respaldos_activos:
@@ -421,8 +428,8 @@ class Interfaz:
             except Exception as e:
                 print(f"❗Error en respaldo automático: {e}")
                 
-            # Esperar 60 segundos antes del próximo respaldo
-            for i in range(60):
+            # modifica el tiempo de respaldos
+            for i in range(10):
                 if not self.respaldos_activos:
                     break
                 time.sleep(1)

@@ -24,19 +24,19 @@ Una aplicación de escritorio para la gestión de autores y libros, desarrollada
   - Consultar por ID.
 
 ### ✅ Frontend con Tkinter
-- Interfaz dividida en dos secciones: Autores (izquierda) y Libros (derecha).
+- Interfaz dividida en dos pestañas: Autores y Libros.
 - Botones por sección:
   - Crear
   - Consultar todos
   - Consultar por ID
   - Actualizar
   - Borrar
-  - Limpiar campos
-- Estilo visual con color de fondo azul claro (`#e6f0ff`).
+  - Limpiar 
+- Estilo visual con color de fondo azul (`#e6f0ff`).
 - Visualización de resultados en widgets `Text`.
 
 ### ✅ Respaldo automático
-- Cada 60 segundos se generan automáticamente:
+- Segun el tiempo asiganado se generan automáticamente:
   - `respaldo_autores.txt`
   - `respaldo_libros.txt`
 - Incluyen todos los registros actuales del sistema.
@@ -49,11 +49,11 @@ Una aplicación de escritorio para la gestión de autores y libros, desarrollada
 
 proyecto/
 │
-├── backend/ # Proyecto Django con modelos, views y API
+├── backend/ # Proyecto Django con las api
 │ ├── manage.py
 │ └── ...
 │
-├── frontend/
+├── frontend/contiene modelos, controladores y vistas
 │ └── app.py # Interfaz gráfica con Tkinter
 │
 ├── respaldo_autores.txt # Archivo de respaldo generado automáticamente
@@ -90,7 +90,7 @@ proyecto/
 ## ⚙ En una terminal nueva, ejecuta la interfaz gráfica (desde la carpeta frontend):
 
   cd ../frontend
-  python app.py
+  python main.py
 
 
 ## 🌐 Endpoints disponibles (API)
@@ -101,7 +101,7 @@ proyecto/
 ## 📝 Notas
   El sistema de respaldo se activa automáticamente al iniciar la interfaz Tkinter.
 
-  Se ejecuta cada 60 segundos en segundo plano.
+  Se ejecuta segun los segundos asignados en segundo plano, en este caso como demostracion se generan cada 10 segundos.
 
   Los respaldos se sobrescriben cada vez y están en formato legible por humanos.
 
