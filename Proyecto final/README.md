@@ -80,17 +80,21 @@ proyecto/
 
 ## ⚙ Instala las dependencias necesarias:
 
-  pip install -r requirements.txt
+ pip install -r requirements.txt
+
 
   Ejecuta el backend (desde la carpeta backend):
 
-  cd backend
-  python manage.py runserver
+cd backend
+python manage.py migrate
+python manage.py runserver
+
 
 ## ⚙ En una terminal nueva, ejecuta la interfaz gráfica (desde la carpeta frontend):
 
-  cd ../frontend
-  python main.py
+ cd frontend
+python main.py
+
 
 
 ## 🌐 Endpoints disponibles (API)
